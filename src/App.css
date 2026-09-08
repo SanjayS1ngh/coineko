@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #222;
+}
+
+.app {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+/* Table */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+thead {
+  background-color: #222;
+  color: white;
+}
+
+th {
+  padding: 16px;
+  text-align: left;
+  font-size: 14px;
+}
+
+td {
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+/* Row hover */
+
+tbody tr:hover {
+  background-color: #f8f9fb;
+}
+
+/* Coin name and image */
+
+.coin-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.coin-name img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Price */
+
+td:nth-child(4) {
+  font-weight: 600;
+}
+
+/* Price change */
+
+.positive {
+  color: green;
+  font-weight: 600;
+}
+
+.negative {
+  color: red;
+  font-weight: 600;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .app {
+    width: 95%;
+    margin: 30px auto;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  th,
+  td {
+    padding: 10px;
+  }
+
+  .coin-name img {
+    width: 24px;
+    height: 24px;
+  }
+}
